@@ -2,7 +2,7 @@
 function runTypingEffect() {
   const text = "I am Esan.";
   const typingElement = document.getElementById("typing-text");
-  const typingDelay = 200;
+  const typingDelay = 150;
 
   typeText(text, typingElement, typingDelay);
 }
