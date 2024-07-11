@@ -1,42 +1,61 @@
-# Portfolio Website
+# My Portfolio
 
-This is a dark-light contrast website for a portfolio. It is related to being a web developer, but can be edited to be for any type of portfolio. It includes a bit of custom JavaScript for the typewriter effect and uses a script called "Lightbox" for the project modals.
+Welcome to my portfolio repository! This repository showcases my skills, projects, and professional journey as a software developer. Below, you'll find detailed information about my background, key projects, and how to connect with me.
 
-<img src="./images/screen.png" />
+## Table of Contents
 
-## Features
+1. [About Me](#about-me)
+2. [Skills](#skills)
+3. [Projects](#projects)
+4. [Experience](#experience)
+5. [Contact](#contact)
 
-- Dark and light contrast
-- Responsive design
-- Full height header/hero
-- Background image overlays
-- Typewriter effect in header
-- Lightbox modals for projects
-- Progress bar stats
-- Font awesome icons
+## About Me
 
-## Usage
+Hi, I'm Ehsan Salimi, a junior software developer with a diverse background, originally from Tehran and now residing in Toronto. My journey into coding started in 2019, and I have since developed a strong proficiency in Python and JavaScript. My academic pursuits led me to explore AI and machine learning, and I am keen on integrating these technologies into my web development projects.
 
-This website is built with [Bootstrap](https://getbootstrap.com/) and [Sass](https://sass-lang.com/). It uses [Font Awesome](https://fontawesome.com/) for icons.
+## Skills
 
-In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
+- **Programming Languages**: Python, JavaScript, HTML5, CSS, MySQL, TypeScript, Java, PHP, C
+- **Libraries and Frameworks**: Node.js, Vue.js, Express, Bootstrap, MongoDB, Flask
+- **Development Tools**: GitHub, Jupyter, Colab, PyCharm, WordPress
+- **Conceptual Skills**: Agile Software Development, Automation and Optimization, API Services, Machine Learning
 
-```bash
-npm install
-```
+## Projects
 
-This will install Bootstrap, Sass and Font Awesome. To build your CSS files from Sass, run:
+### 1. Vehicular Ad-hoc Network (VANET)
+- **Technologies**: Machine Learning models
+- **Description**: Developed and improved models to detect malicious signals targeting self-driving cars, contributing to research in this field.
 
-```bash
-npm run sass:build
-```
+### 2. Planetary App
+- **Technologies**: Flask, SQLite, REST APIs
+- **Description**: Provides detailed information about planets in our solar system, including real-time data and visualizations.
 
-To watch your Sass files for changes, run:
+### 3. Weather App
+- **Technologies**: Tkinter, Open Weather APIs
+- **Description**: A desktop application that displays current weather conditions for various locations.
 
-```bash
-npm run sass:watch
-```
+## Experience
 
-You can add Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
+### Software Engineer Intern - BETTERMODE
+- **Duration**: June 2023 – September 2023
+- **Responsibilities**: Developed new features, fixed bugs, and optimized performance for web applications.
 
-To add your own custom styles, use the `styles.scss` file.
+### Research Assistant - University of Windsor
+- **Duration**: June 2022 – December 2023
+- **Responsibilities**: Conducted research, analyzed data, and developed software tools.
+
+### Teaching Assistant - University of Windsor
+- **Duration**: September 2021 – April 2024
+- **Responsibilities**: Assisted in teaching computer science courses, graded assignments, and provided student support.
+
+## Contact
+
+Feel free to reach out to me for any inquiries or collaborations:
+
+- **LinkedIn**: [linkedin.com/in/ehsansalimi](https://linkedin.com/in/ehsansalimi)
+- **GitHub**: [github.com/ehsansalimi](https://github.com/ehsansalimi)
+- **Email**: [esalimi.cs@gmail.com](mailto:esalimi.cs@gmail.com)
+- **Phone**: +1 647-869-4964
+
+Thank you for visiting my portfolio!
