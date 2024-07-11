@@ -53,8 +53,8 @@ Hi, I'm Ehsan Salimi, a junior software developer with a diverse background, ori
 
 Feel free to reach out to me for any inquiries or collaborations:
 
-- **LinkedIn**: [linkedin.com/in/ehsansalimi](https://linkedin.com/in/ehsansalimi)
-- **GitHub**: [github.com/ehsansalimi](https://github.com/ehsansalimi)
+- **LinkedIn**: [linkedin.com/in/ehsan-salimi](https://www.linkedin.com/in/ehsan-salimi-2b65191b7/)
+- **GitHub**: [github.com/ehsansl](https://github.com/ehsansl)
 - **Email**: [esalimi.cs@gmail.com](mailto:esalimi.cs@gmail.com)
 - **Phone**: +1 647-869-4964
 
