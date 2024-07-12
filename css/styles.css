@@ -108,3 +108,36 @@
   margin: 0;
   padding: 0;
 }
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%;
+  max-height: 40%;
+  min-height: 40%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%; /* Ensure the card doesn't grow too large */
+  min-height: 100%;
+}
+
+.card-body {
+  flex: 1 1 auto;
+}
+
+.card-footer {
+  padding: var(--bs-card-cap-padding-y, 0.5rem) var(--bs-card-cap-padding-x, 1rem);
+  color: var(--bs-card-cap-color, #000);
+  background-color: var(--bs-card-cap-bg, #f8f9fa);
+  border-top: var(--bs-card-border-width, 1px) solid var(--bs-card-border-color, #dee2e6);
+  margin-top: auto;
+}
