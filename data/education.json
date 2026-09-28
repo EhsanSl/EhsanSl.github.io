@@ -1,0 +1,32 @@
+[
+  {
+    "id": "concordia-msc",
+    "school": "Concordia University",
+    "location": "Montreal, QC",
+    "degree": "Master's, AI and medical imaging",
+    "period": {
+      "start": "2026-01",
+      "end": "2027",
+      "endLabel": "expected 2027"
+    },
+    "notes": [
+      "Research assistant on an ultrasound-guided neurosurgery project."
+    ],
+    "visible": true,
+    "todo": "Use the exact program name (e.g. MSc/MASc in Computer Science) and your expected graduation term."
+  },
+  {
+    "id": "windsor-bsc",
+    "school": "University of Windsor",
+    "location": "Windsor, ON",
+    "degree": "BSc Computer Science (Honours)",
+    "period": {
+      "start": "2020-09",
+      "end": "2024-04"
+    },
+    "notes": [
+      "Student Access Bursary recipient; three-time In-Course Scholarship recipient."
+    ],
+    "visible": true
+  }
+]

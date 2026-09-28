@@ -1,0 +1,53 @@
+{
+  "name": "Ehsan Salimi",
+  "title": "Software Developer & ML Researcher",
+  "tagline": "MSc student in AI and medical imaging at Concordia University. I build machine-learning pipelines and the software around them.",
+  "availability": "Open to part-time roles now, and full-time roles from 2027.",
+  "location": "Montreal, QC",
+  "email": "esalimi.cs@gmail.com",
+  "url": "https://ehsansl.github.io/",
+  "cv": "files/Ehsan_Salimi_CV.pdf",
+  "portrait": {
+    "src": "images/portrait.webp",
+    "alt": "Portrait of Ehsan Salimi"
+  },
+  "about": [
+    "I'm a software developer and machine-learning researcher, currently a master's student at Concordia University in Montreal, working on AI for medical imaging.",
+    "Before that I completed an Honours BSc in Computer Science at the University of Windsor, worked as a research assistant on machine learning for vehicle-network security and online-safety NLP, interned on Bettermode's Slack integration, and debugged customer integrations and scripts at Oracle NetSuite.",
+    "I like building systems end to end: the data pipeline and model, and the APIs and interfaces around them."
+  ],
+  "links": [
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/EhsanSl",
+      "icon": "github"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ehsan-salimi-2b65191b7/",
+      "icon": "linkedin"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "url": "mailto:esalimi.cs@gmail.com",
+      "icon": "envelope"
+    }
+  ],
+  "contactForm": "https://formspree.io/f/mjkbkkdb",
+  "categoryLabels": {
+    "machine-learning": "Machine learning",
+    "medical-imaging": "Medical imaging",
+    "nlp": "NLP",
+    "llm": "LLM",
+    "backend": "Back end",
+    "web": "Web",
+    "research": "Research",
+    "tools": "Tools",
+    "systems": "Systems",
+    "games": "Games"
+  },
+  "todo": "Replace files/Ehsan_Salimi_CV.pdf: the current PDF predates Concordia (and NetSuite)."
+}

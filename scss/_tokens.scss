@@ -1,0 +1,56 @@
+// Design tokens. Change colours, radii and type here; everything else reads these CSS variables.
+$brand-green: #2d8153;
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #fbfbf9;
+  --surface: #ffffff;
+  --surface-2: #f1f3ee;
+  --text: #17201b;
+  --muted: #55645b;
+  --border: #dfe4dc;
+  --accent: #{$brand-green};
+  --accent-ink: #226341;        // accent for text/links on --bg (AA contrast)
+  --on-accent: #ffffff;
+  --accent-soft: rgba(45, 129, 83, 0.1);
+  --shadow: 0 1px 2px rgba(20, 32, 25, 0.06), 0 8px 24px rgba(20, 32, 25, 0.06);
+  --hero-glow: rgba(45, 129, 83, 0.16);
+  --badge-research-bg: #e8ebfb;
+  --badge-research-fg: #3a47a8;
+  --badge-progress-bg: #fbf0dc;
+  --badge-progress-fg: #8a5300;
+}
+
+@mixin dark-tokens {
+  color-scheme: dark;
+  --bg: #0e1411;
+  --surface: #151d18;
+  --surface-2: #1b2620;
+  --text: #e8efe9;
+  --muted: #a4b3a9;
+  --border: #29362e;
+  --accent: #4fc484;
+  --accent-ink: #6fd79c;
+  --on-accent: #08150d;
+  --accent-soft: rgba(79, 196, 132, 0.12);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --hero-glow: rgba(79, 196, 132, 0.14);
+  --badge-research-bg: #22284a;
+  --badge-research-fg: #b7c0ff;
+  --badge-progress-bg: #3a2f14;
+  --badge-progress-fg: #f2c46b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-tokens; }
+}
+:root[data-theme="dark"] { @include dark-tokens; }
+
+:root {
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-pill: 999px;
+  --space-section: clamp(3.5rem, 8vw, 6rem);
+  --nav-h: 64px;
+}

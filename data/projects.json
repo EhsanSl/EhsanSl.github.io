@@ -1,0 +1,350 @@
+[
+  {
+    "id": "evd-ultrasound",
+    "title": "Ultrasound guidance for ventricular drain placement",
+    "summary": "Research at Concordia on ultrasound-based guidance for external ventricular drain (EVD) placement, including ventricle segmentation in transcranial ultrasound.",
+    "role": "Research assistant",
+    "period": {
+      "start": "2026-01",
+      "end": null
+    },
+    "status": "research",
+    "category": [
+      "medical-imaging",
+      "machine-learning",
+      "research"
+    ],
+    "tech": [
+      "Medical imaging",
+      "Ultrasound",
+      "Segmentation"
+    ],
+    "highlights": [],
+    "links": {},
+    "image": null,
+    "featured": true,
+    "visible": true,
+    "order": 1,
+    "todo": "Confirm with your supervisor what can be public; then add highlights, an image (e.g. a phantom-setup photo) and a link."
+  },
+  {
+    "id": "vanet",
+    "title": "Secure communication for vehicular networks (VANET)",
+    "summary": "Machine-learning models that detect malicious signals targeting self-driving cars, built and improved as part of a research project.",
+    "role": "Research assistant",
+    "period": {
+      "start": "2022-06",
+      "end": "2023-12"
+    },
+    "status": "research",
+    "category": [
+      "machine-learning",
+      "research"
+    ],
+    "tech": [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "Feature engineering"
+    ],
+    "highlights": [
+      "99.8% signal-transmission accuracy for autonomous-vehicle communication.",
+      "Cut model-training time by 30% by automating the training pipeline."
+    ],
+    "links": {
+      "slides": "https://www.canva.com/design/DAF02JEgnqE/n6nC5zghDlKGe6-PECBgWQ/view?utm_content=DAF02JEgnqE&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+    },
+    "image": {
+      "src": "images/projects/vanet.webp",
+      "alt": "Title slide: Secure Communication for VANET"
+    },
+    "featured": true,
+    "visible": true,
+    "order": 2
+  },
+  {
+    "id": "osprey",
+    "title": "Online predatory conversation detection (OSPREY)",
+    "summary": "Machine-learning models that detect predatory conversations in online chat, developed by a small research team.",
+    "role": "Research assistant",
+    "period": {
+      "start": "2022-11",
+      "end": "2023-03"
+    },
+    "status": "research",
+    "category": [
+      "machine-learning",
+      "nlp",
+      "research"
+    ],
+    "tech": [
+      "Python",
+      "NLP",
+      "Scrapy"
+    ],
+    "highlights": [
+      "+5% detection accuracy through NLP feature engineering.",
+      "Built a Scrapy crawler that expanded the dataset by 20%.",
+      "Presented at UWill Discover 2023."
+    ],
+    "links": {
+      "slides": "https://www.canva.com/design/DAFdGpcxINQ/6VLkuARb3RvMLt5u9v-LTg/view?utm_content=DAFdGpcxINQ&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+    },
+    "image": {
+      "src": "images/projects/osprey.webp",
+      "alt": "Title slide: OSPREY, Online Predatory Conversation Detection"
+    },
+    "featured": true,
+    "visible": true,
+    "order": 3
+  },
+  {
+    "id": "spotifulyflie",
+    "title": "Spotifulyflie: local Spotify library analyzer",
+    "summary": "A local-first Python app for organizing a Spotify library: it syncs Liked Songs and playlists into SQLite and adds search, filtering and reversible playlist edits.",
+    "role": "Solo project",
+    "period": {
+      "start": "2026-02",
+      "end": null
+    },
+    "status": "in-progress",
+    "category": [
+      "tools",
+      "backend"
+    ],
+    "tech": [
+      "Python",
+      "FastAPI",
+      "SQLite",
+      "OAuth (PKCE)",
+      "JavaScript"
+    ],
+    "highlights": [
+      "Hand-written Spotify API client with an OAuth PKCE flow and an incremental, resumable sync.",
+      "Custom search query language (fields, ranges, negation, sorting) shared by the UI filter panel.",
+      "Playlist writes are logged with per-operation undo, so a network failure leaves a reversible state."
+    ],
+    "links": {},
+    "image": null,
+    "featured": true,
+    "visible": true,
+    "order": 4,
+    "todo": "Add the GitHub link if the repo is public, and a screenshot of the UI."
+  },
+  {
+    "id": "planetary-api",
+    "title": "Planetary API",
+    "summary": "A Flask back end for retrieving and updating planetary data, with webhooks that keep the data current as new discoveries come in.",
+    "role": "Solo project",
+    "status": "shipped",
+    "category": [
+      "backend",
+      "web"
+    ],
+    "tech": [
+      "Python",
+      "Flask",
+      "SQLite",
+      "REST",
+      "Webhooks"
+    ],
+    "highlights": [
+      "Webhook-based pipeline for continuous real-time updates.",
+      "User authentication for personalized exploration tracking."
+    ],
+    "links": {},
+    "image": null,
+    "featured": true,
+    "visible": true,
+    "order": 5,
+    "todo": "Add a code link and a screenshot, or set featured to false."
+  },
+  {
+    "id": "library-manager",
+    "title": "Library Manager",
+    "summary": "An online library management system with admin panels for managing users and books, borrowing, loans and fines.",
+    "role": "Course project (solo)",
+    "period": {
+      "start": "2024-01",
+      "end": "2024-04"
+    },
+    "status": "shipped",
+    "category": [
+      "web",
+      "backend"
+    ],
+    "tech": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "highlights": [
+      "Normalized MySQL schema with role-based users, loans and overdue fines.",
+      "Book borrowing done as an atomic transaction with rollback on failure."
+    ],
+    "links": {
+      "live": "https://salimie.myweb.cs.uwindsor.ca/comp3077_W2024/project/html/index.php"
+    },
+    "image": {
+      "src": "images/projects/library-manager.webp",
+      "alt": "Screenshot of the Library Manager admin table"
+    },
+    "featured": true,
+    "visible": true,
+    "order": 6,
+    "todo": "The live link is on your old UWindsor student web space and may no longer work; check it, and link the code instead if it's gone."
+  },
+  {
+    "id": "resume-assistant",
+    "title": "Resume Assistant",
+    "summary": "A personal tool that stores my experience as verified facts in SQLite and generates tailored applications, where every generated line traces back to its source.",
+    "role": "Solo project",
+    "period": {
+      "start": "2026-09",
+      "end": null
+    },
+    "status": "in-progress",
+    "category": [
+      "tools",
+      "llm"
+    ],
+    "tech": [
+      "Python",
+      "SQLite",
+      "LLM pipelines"
+    ],
+    "highlights": [],
+    "links": {},
+    "image": null,
+    "featured": false,
+    "visible": true,
+    "order": 10,
+    "todo": "Decide whether you want this public; add a link if the repo is public."
+  },
+  {
+    "id": "spam-ensemble",
+    "title": "Ensemble learning for email spam classification",
+    "summary": "A comparison of SVM, MLP, Random Forest and XGBoost on the UCI Spambase dataset, focused on the cost of false positives.",
+    "role": "Course project (team)",
+    "period": {
+      "start": "2023-03",
+      "end": "2023-03"
+    },
+    "status": "shipped",
+    "category": [
+      "machine-learning"
+    ],
+    "tech": [
+      "Python",
+      "scikit-learn",
+      "XGBoost"
+    ],
+    "highlights": [
+      "Random Forest gave the best trade-off: 95.7% accuracy and 0.973 precision."
+    ],
+    "links": {},
+    "image": null,
+    "featured": false,
+    "visible": true,
+    "order": 11
+  },
+  {
+    "id": "iterated-pd",
+    "title": "Iterated Prisoner's Dilemma with genetic algorithms",
+    "summary": "A comparative study of genetic-algorithm strategies against classic strategies in round-robin tournaments.",
+    "role": "Course project (team)",
+    "period": {
+      "start": "2023-02",
+      "end": "2023-02"
+    },
+    "status": "shipped",
+    "category": [
+      "machine-learning"
+    ],
+    "tech": [
+      "Python",
+      "Axelrod library",
+      "Genetic algorithms"
+    ],
+    "highlights": [],
+    "links": {},
+    "image": null,
+    "featured": false,
+    "visible": true,
+    "order": 12
+  },
+  {
+    "id": "cool-c-projects",
+    "title": "Cool C projects",
+    "summary": "A collection of C programs, from a command-line calculator to a CPU scheduler simulation.",
+    "role": "Solo",
+    "status": "shipped",
+    "category": [
+      "systems"
+    ],
+    "tech": [
+      "C"
+    ],
+    "highlights": [],
+    "links": {
+      "code": "https://github.com/EhsanSl/Cool-C-Projects"
+    },
+    "image": {
+      "src": "images/projects/cool-c-projects.webp",
+      "alt": "Close-up of source code on a screen"
+    },
+    "featured": false,
+    "visible": true,
+    "order": 13
+  },
+  {
+    "id": "snake-game",
+    "title": "Snake game",
+    "summary": "A small Java snake game.",
+    "role": "Solo",
+    "status": "shipped",
+    "category": [
+      "games"
+    ],
+    "tech": [
+      "Java"
+    ],
+    "highlights": [],
+    "links": {
+      "code": "https://github.com/EhsanSl/Cool-Java-Projects/tree/main/SnakeGame"
+    },
+    "image": {
+      "src": "images/projects/snake-game.webp",
+      "alt": "Snake game over screen"
+    },
+    "featured": false,
+    "visible": true,
+    "order": 14
+  },
+  {
+    "id": "tic-tac-toe",
+    "title": "Tic Tac Toe",
+    "summary": "A two-player Tic Tac Toe game in Java.",
+    "role": "Solo",
+    "status": "shipped",
+    "category": [
+      "games"
+    ],
+    "tech": [
+      "Java"
+    ],
+    "highlights": [],
+    "links": {
+      "code": "https://github.com/EhsanSl/Cool-Java-Projects/tree/main/X_O"
+    },
+    "image": {
+      "src": "images/projects/tic-tac-toe.webp",
+      "alt": "Tic Tac Toe board"
+    },
+    "featured": false,
+    "visible": true,
+    "order": 15
+  }
+]
