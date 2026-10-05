@@ -1,0 +1,7 @@
+[
+  { "id": "languages", "label": "Languages", "items": ["Python", "JavaScript", "TypeScript", "Java", "C", "PHP", "SQL"], "visible": true },
+  { "id": "ml", "label": "ML and data", "items": ["PyTorch", "MONAI", "nnU-Net", "scikit-learn", "NumPy", "Pandas", "Feature engineering", "NLP", "Scrapy", "Jupyter", "Google Colab"], "visible": true },
+  { "id": "web", "label": "Web and back end", "items": ["HTML5", "CSS", "Node.js", "Express", "Flask", "Vue.js", "Bootstrap", "REST", "GraphQL", "SOAP", "OAuth 2.0", "Webhooks"], "visible": true },
+  { "id": "data", "label": "Databases", "items": ["MySQL", "SQLite", "MongoDB"], "visible": true },
+  { "id": "tools", "label": "Tools and platforms", "items": ["Git", "GitHub", "Docker", "Linux", "SuiteScript", "SuiteBuilder"], "visible": true }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "concordia-msc",
+    "school": "Concordia University",
+    "location": "Montreal, QC",
+    "degree": "Master of Computer Science",
+    "period": {
+      "start": "2026-01",
+      "end": "2027",
+      "endLabel": "expected 2027"
+    },
+    "notes": [
+      "Research assistant on an ultrasound-guided neurosurgery project."
+    ],
+    "visible": true
+  },
+  {
+    "id": "windsor-bsc",
+    "school": "University of Windsor",
+    "location": "Windsor, ON",
+    "degree": "BSc Computer Science (Honours)",
+    "period": {
+      "start": "2020-09",
+      "end": "2024-04"
+    },
+    "notes": [
+      "Student Access Bursary recipient; three-time In-Course Scholarship recipient; Dean's Office Scholarship."
+    ],
+    "visible": true
+  }
+]

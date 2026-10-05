@@ -1,2 +1,7 @@
 node_modules
-readme-2.md
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+tests/out/
+lighthouse-*.json

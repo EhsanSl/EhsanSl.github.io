@@ -1,0 +1,113 @@
+[
+  {
+    "id": "concordia-ra",
+    "role": "Research Assistant",
+    "focus": "Transcranial ultrasound and ventricle segmentation",
+    "org": "Concordia University",
+    "location": "Montreal, QC",
+    "type": "research",
+    "period": {
+      "start": "2026-01",
+      "end": null
+    },
+    "highlights": [
+      "Designed and implemented a machine-learning pipeline that segments the lateral ventricles, the target structure for a ventriculostomy catheter, from paired transcranial ultrasound and MRI scans across 8 patients using nnU-Net.",
+      "Engineered an end-to-end 3D deep-learning pipeline for automated lateral-ventricle segmentation in transcranial ultrasound using PyTorch and MONAI.",
+      "Curated and annotated an 8-subject dataset of paired 3D ultrasound and co-registered MRI scans, and benchmarked zero-shot ultrasound foundation models (UltraSAM and SAMUS) against it."
+    ],
+    "visible": true
+  },
+  {
+    "id": "netsuite",
+    "role": "Technical Support Analyst",
+    "focus": "SuiteCloud and SuiteBuilder",
+    "org": "Oracle NetSuite",
+    "location": "Toronto, ON",
+    "type": "industry",
+    "period": {
+      "start": "2024-10",
+      "end": null
+    },
+    "highlights": [
+      "Troubleshot and debugged SuiteScript 1.0 and 2.x customization scripts; in simpler cases wrote and delivered working code directly to customers.",
+      "Resolved SOAP and REST API integration failures, restoring real-time data flow and reducing client downtime.",
+      "Diagnosed and fixed SuiteBuilder issues involving workflows, custom fields and forms.",
+      "Held a 100% case resolution rate with consistent 5/5 customer satisfaction ratings.",
+      "Partnered with engineering teams on product defects, reducing resolution time for escalated issues."
+    ],
+    "visible": true
+  },
+  {
+    "id": "bettermode",
+    "role": "Software Engineer Intern",
+    "focus": "Slack integration optimization",
+    "org": "Bettermode",
+    "location": "Toronto, ON",
+    "type": "industry",
+    "period": {
+      "start": "2023-06",
+      "end": "2023-09"
+    },
+    "highlights": [
+      "Developed a Slack integration for the Bettermode web application, letting businesses connect their Bettermode community to their Slack workspace.",
+      "Redesigned the Node.js back-end architecture using modular design patterns, cutting setup time by 20% and improving deployment reliability.",
+      "Implemented OAuth 2.0 authentication for the Slack integration, strengthening data security.",
+      "Introduced independent channel and webhook connections, improving integration flexibility.",
+      "Delivered enhancements across three agile sprints."
+    ],
+    "visible": true
+  },
+  {
+    "id": "windsor-ra-vanet",
+    "role": "Research Assistant",
+    "focus": "Vehicular ad hoc network security",
+    "org": "University of Windsor",
+    "location": "Windsor, ON",
+    "type": "research",
+    "period": {
+      "start": "2022-06",
+      "end": "2023-12"
+    },
+    "highlights": [
+      "Engineered machine-learning models with feature engineering, reaching 99.8% signal-transmission accuracy for autonomous-vehicle communication.",
+      "Used correlation matrices and heat maps to identify the variables that drive performance.",
+      "Automated model-training pipelines, reducing training time by 30%."
+    ],
+    "visible": true
+  },
+  {
+    "id": "windsor-ra-osprey",
+    "role": "Research Assistant",
+    "focus": "Online predatory conversation detection",
+    "org": "University of Windsor",
+    "location": "Windsor, ON",
+    "type": "research",
+    "period": {
+      "start": "2022-11",
+      "end": "2023-03"
+    },
+    "highlights": [
+      "Increased detection accuracy by 5% through NLP feature engineering.",
+      "Built a Scrapy web crawler that expanded the dataset by 20%.",
+      "Presented the findings at UWill Discover 2023."
+    ],
+    "visible": true
+  },
+  {
+    "id": "windsor-ta",
+    "role": "Teaching Assistant",
+    "focus": "Python and Intro to Algorithms",
+    "org": "University of Windsor",
+    "location": "Windsor, ON",
+    "type": "teaching",
+    "period": {
+      "start": "2021-09",
+      "end": "2024-04"
+    },
+    "highlights": [
+      "Guided students through Python programming and software design patterns.",
+      "Led weekly labs and office hours, giving one-on-one help."
+    ],
+    "visible": true
+  }
+]

@@ -1,17 +1,24 @@
 {
-  "name": "bs5-simple-starter",
-  "version": "1.0.0",
-  "description": "Simple workflow for working with and customizing Bootstrap 5",
-  "main": "index.js",
+  "name": "ehsansl-github-io",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal portfolio of Ehsan Salimi: static site, content driven by JSON files in data/.",
   "scripts": {
-    "sass:build": "sass --no-source-map scss:css",
-    "sass:watch": "sass --no-source-map --watch scss:css"
+    "dev": "npx --yes serve . -l 5173",
+    "sass:build": "sass --no-source-map --style=compressed --load-path=node_modules --quiet-deps --silence-deprecation=import,global-builtin,color-functions,if-function scss/main.scss css/styles.css",
+    "sass:watch": "sass --no-source-map --style=compressed --load-path=node_modules --quiet-deps --silence-deprecation=import,global-builtin,color-functions,if-function --watch scss/main.scss css/styles.css",
+    "icons": "node scripts/build-icons.mjs",
+    "validate": "node scripts/validate-data.mjs",
+    "new:project": "node scripts/new-project.mjs",
+    "build": "npm run sass:build && npm run icons",
+    "check": "npm run validate"
   },
-  "author": "Brad Traversy",
+  "author": "Ehsan Salimi",
   "license": "MIT",
   "devDependencies": {
+    "@fontsource/poppins": "^5.0.0",
     "@fortawesome/fontawesome-free": "^6.4.0",
-    "bootstrap": "^5.2.3",
-    "sass": "^1.62.0"
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.0"
   }
 }

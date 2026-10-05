@@ -1,61 +1,81 @@
-# My Portfolio
+# EhsanSl.github.io
 
-Welcome to my portfolio repository! This repository showcases my skills, projects, and professional journey as a software developer. Below, you'll find detailed information about my background, key projects, and how to connect with me.
+Personal portfolio of Ehsan Salimi, served by GitHub Pages at <https://ehsansl.github.io/>.
 
-## Table of Contents
+It's a static site with no framework and no build step at deploy time. `index.html` holds the page layout and a set of `<template>` blocks. Small ES modules in `js/` fill those blocks from the JSON files in `data/`. **To update the site, you edit data, not HTML.**
 
-1. [About Me](#about-me)
-2. [Skills](#skills)
-3. [Projects](#projects)
-4. [Experience](#experience)
-5. [Contact](#contact)
+## Updating content
 
-## About Me
+| To change…                          | Edit                                                                  |
+| ----------------------------------- | --------------------------------------------------------------------- |
+| Name, headline, tagline, about text | `data/site.json`                                                      |
+| Availability line, location, email  | `data/site.json`                                                      |
+| GitHub / LinkedIn / email links     | `data/site.json` → `links`                                            |
+| Projects                            | `data/projects.json` (or run `npm run new:project`)                   |
+| Jobs, research and teaching roles   | `data/experience.json`                                                |
+| Skills                              | `data/skills.json`                                                    |
+| Degrees                             | `data/education.json`                                                 |
+| CV                                  | replace `files/Ehsan_Salimi_CV.pdf` (keep the name, or update `cv` in `site.json`) |
+| Colours, spacing, fonts             | `scss/_tokens.scss`, then `npm run sass:build`                        |
 
-Hi, I'm Ehsan Salimi, a junior software developer with a diverse background, originally from Tehran and now residing in Toronto. My journey into coding started in 2019, and I have since developed a strong proficiency in Python and JavaScript. My academic pursuits led me to explore AI and machine learning, and I am keen on integrating these technologies into my web development projects.
+Field-by-field reference: [docs/data-schema.md](docs/data-schema.md).
 
-## Skills
+A few rules the renderer follows, so you know what to expect:
 
-- **Programming Languages**: Python, JavaScript, HTML5, CSS, MySQL, TypeScript, Java, PHP, C
-- **Libraries and Frameworks**: Node.js, Vue.js, Express, Bootstrap, MongoDB, Flask
-- **Development Tools**: GitHub, Jupyter, Colab, PyCharm, WordPress
-- **Conceptual Skills**: Agile Software Development, Automation and Optimization, API Services, Machine Learning
+- Projects with `"featured": true` go in the main grid. The rest go under "More things I've built". Within each group they're sorted by `order`.
+- `"visible": false` hides an entry without deleting it.
+- Link buttons only appear for links that exist. Supported types: `live`, `demo`, `code`, `paper`, `slides`, `video`.
+- The filter chips are built from `category` values that at least two projects share.
+- Numbers like `99.8%` or `+5%` in highlights are emphasized automatically.
+- An optional `"todo"` field on any entry is never shown on the site. `npm run validate` prints it as a reminder.
 
-## Projects
+### Adding a project
 
-### 1. Vehicular Ad-hoc Network (VANET)
-- **Technologies**: Machine Learning models
-- **Description**: Developed and improved models to detect malicious signals targeting self-driving cars, contributing to research in this field.
+```bash
+npm run new:project        # answers a few questions and appends to data/projects.json
+```
 
-### 2. Planetary App
-- **Technologies**: Flask, SQLite, REST APIs
-- **Description**: Provides detailed information about planets in our solar system, including real-time data and visualizations.
+Then add an image at `images/projects/<id>.webp` (3:2, around 900×600) and set `"image": { "src": "...", "alt": "..." }`. Without an image, the card shows a patterned placeholder labelled with the project's first category.
 
-### 3. Weather App
-- **Technologies**: Tkinter, Open Weather APIs
-- **Description**: A desktop application that displays current weather conditions for various locations.
+## Running locally
 
-## Experience
+```bash
+npm install          # once
+npm run dev          # serves the site at http://localhost:5173
+```
 
-### Software Engineer Intern - BETTERMODE
-- **Duration**: June 2023 – September 2023
-- **Responsibilities**: Developed new features, fixed bugs, and optimized performance for web applications.
+You can't open `index.html` by double-clicking. Browsers block `fetch()` for the data files on `file://`, so use `npm run dev`.
 
-### Research Assistant - University of Windsor
-- **Duration**: June 2022 – December 2023
-- **Responsibilities**: Conducted research, analyzed data, and developed software tools.
+## Checks
 
-### Teaching Assistant - University of Windsor
-- **Duration**: September 2021 – April 2024
-- **Responsibilities**: Assisted in teaching computer science courses, graded assignments, and provided student support.
+```bash
+npm run validate     # checks every data file: required fields, ids, dates, links, image paths
+```
 
-## Contact
+The same check runs on GitHub (`.github/workflows/validate.yml`) for every push to `main` and every pull request.
 
-Feel free to reach out to me for any inquiries or collaborations:
+## Styles and icons
 
-- **LinkedIn**: [linkedin.com/in/ehsan-salimi](https://www.linkedin.com/in/ehsan-salimi-2b65191b7/)
-- **GitHub**: [github.com/ehsansl](https://github.com/ehsansl)
-- **Email**: [esalimi.cs@gmail.com](mailto:esalimi.cs@gmail.com)
-- **Phone**: +1 647-869-4964
+- `scss/main.scss` imports only the Bootstrap parts the site uses (reboot and containers) plus `_tokens.scss`, `_base.scss` and `_components.scss`. It compiles to `css/styles.css` via `npm run sass:build` (or `npm run sass:watch` while editing). Never edit `css/styles.css` by hand.
+- Icons are an SVG sprite at `images/icons.svg`, built from Font Awesome Free by `npm run icons`. To add an icon, add its name to the list in `scripts/build-icons.mjs` and rerun the script.
+- Fonts are self-hosted in `fonts/` (Poppins 400/600/700, Latin subset).
 
-Thank you for visiting my portfolio!
+## Deploying
+
+Merge to `main` and push. GitHub Pages serves the repository as-is (`.nojekyll` turns off Jekyll processing). Commit the compiled `css/styles.css` and `images/icons.svg`, because Pages doesn't run npm.
+
+## Layout
+
+```
+index.html            page layout + <template> blocks
+data/*.json           all content
+js/main.js            entry: loads data, calls the renderers
+js/data.js            fetch + light checks
+js/render/*.js        one renderer per section
+js/ui.js              theme toggle, scroll reveal, nav highlight
+js/utils/dom.js       safe DOM helpers (text only, no innerHTML)
+scss/                 styles (source)   →  css/styles.css (compiled)
+scripts/              validate-data, new-project, build-icons
+images/ fonts/ files/ assets
+404.html robots.txt sitemap.xml favicon.* 
+```
