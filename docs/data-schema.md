@@ -63,6 +63,7 @@ All content lives in `data/`. Every list item has an `id` (lowercase-with-dashes
 | `period`     | no       |                                                                          |
 | `highlights` | no       | Outcome bullets for the details dialog                                   |
 | `links`      | no       | Any of `live`, `demo`, `code`, `paper`, `slides`, `video`                |
+| `private`    | no       | `true` shows a "Private repo" note when there's no `code` link          |
 | `image`      | no       | `null` shows a placeholder; `alt` is required when set                   |
 | `featured`   | no       | `true` puts it in the main grid                                          |
 | `order`      | no       | Lower comes first within its group                                       |

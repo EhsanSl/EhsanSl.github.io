@@ -1,7 +1,7 @@
 {
   "name": "Ehsan Salimi",
   "title": "Software Developer & ML Researcher",
-  "tagline": "MSc student in AI and medical imaging at Concordia University. I build machine-learning pipelines and the software around them.",
+  "tagline": "Master's student in Computer Science at Concordia University, working on AI for medical imaging. I build machine-learning pipelines and the software around them.",
   "availability": "Open to part-time roles now, and full-time roles from 2027.",
   "location": "Montreal, QC",
   "email": "esalimi.cs@gmail.com",
@@ -48,6 +48,5 @@
     "tools": "Tools",
     "systems": "Systems",
     "games": "Games"
-  },
-  "todo": "Replace files/Ehsan_Salimi_CV.pdf: the current PDF predates Concordia (and NetSuite)."
+  }
 }

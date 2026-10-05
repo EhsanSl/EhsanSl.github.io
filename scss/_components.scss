@@ -100,7 +100,8 @@
   &:focus-visible::after { outline: 3px solid var(--accent); outline-offset: -3px; }
 }
 .project-card__summary { color: var(--muted); font-size: 0.93rem; margin: 0; }
-.project-card__links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.4rem; position: relative; z-index: 1; }
+.project-card__links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: auto; padding-top: 0.4rem; position: relative; z-index: 1; }
+.private-note { font-size: 0.8rem; color: var(--muted); }
 
 .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: var(--radius-pill); font-size: 0.74rem; font-weight: 600; background: var(--accent-soft); color: var(--accent-ink); }
 .badge--research { background: var(--badge-research-bg); color: var(--badge-research-fg); }
@@ -116,7 +117,7 @@
   display: flex; flex-direction: column; gap: 0.35rem; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface);
   h4 { font-size: 0.98rem; margin: 0; font-weight: 600; }
   p { margin: 0; color: var(--muted); font-size: 0.88rem; }
-  .mini-item__links { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; font-size: 0.85rem; font-weight: 500; margin-top: auto; padding-top: 0.25rem;
+  .mini-item__links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1rem; font-size: 0.85rem; font-weight: 500; margin-top: auto; padding-top: 0.25rem;
     a { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 32px; } }
 }
 .empty-state { color: var(--muted); padding: 2rem 0; }

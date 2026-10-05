@@ -3,7 +3,7 @@
     "id": "concordia-msc",
     "school": "Concordia University",
     "location": "Montreal, QC",
-    "degree": "Master's, AI and medical imaging",
+    "degree": "Master of Computer Science",
     "period": {
       "start": "2026-01",
       "end": "2027",
@@ -12,8 +12,7 @@
     "notes": [
       "Research assistant on an ultrasound-guided neurosurgery project."
     ],
-    "visible": true,
-    "todo": "Use the exact program name (e.g. MSc/MASc in Computer Science) and your expected graduation term."
+    "visible": true
   },
   {
     "id": "windsor-bsc",
@@ -25,7 +24,7 @@
       "end": "2024-04"
     },
     "notes": [
-      "Student Access Bursary recipient; three-time In-Course Scholarship recipient."
+      "Student Access Bursary recipient; three-time In-Course Scholarship recipient; Dean's Office Scholarship."
     ],
     "visible": true
   }

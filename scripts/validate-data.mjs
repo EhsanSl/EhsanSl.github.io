@@ -82,7 +82,7 @@ if (projects) {
       if (!p.image.alt) err(where, "image.alt is required (describe the image)");
     }
     if (p.visible !== false && p.featured) {
-      if (!Object.keys(p.links || {}).length) warn(where, "featured project has no links");
+      if (!Object.keys(p.links || {}).length && !p.private) warn(where, "featured project has no links (set \"private\": true if the code is private)");
       if (!p.image) warn(where, "featured project has no image (a placeholder is shown)");
       if (!p.highlights?.length) warn(where, "featured project has no highlights");
     }

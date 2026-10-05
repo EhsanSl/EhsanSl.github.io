@@ -15,17 +15,23 @@
       "research"
     ],
     "tech": [
-      "Medical imaging",
-      "Ultrasound",
-      "Segmentation"
+      "PyTorch",
+      "MONAI",
+      "nnU-Net",
+      "3D ultrasound",
+      "MRI"
     ],
-    "highlights": [],
+    "highlights": [
+      "End-to-end 3D deep-learning pipeline (PyTorch, MONAI, nnU-Net) for lateral-ventricle segmentation in transcranial ultrasound.",
+      "Curated and annotated an 8-subject dataset of paired 3D ultrasound and co-registered MRI scans.",
+      "Benchmarked zero-shot ultrasound foundation models (UltraSAM, SAMUS) against the dataset."
+    ],
     "links": {},
     "image": null,
     "featured": true,
     "visible": true,
     "order": 1,
-    "todo": "Confirm with your supervisor what can be public; then add highlights, an image (e.g. a phantom-setup photo) and a link."
+    "todo": "Add an image (e.g. a phantom-setup photo) and a link once your supervisor OKs it."
   },
   {
     "id": "vanet",
@@ -129,7 +135,8 @@
     "featured": true,
     "visible": true,
     "order": 4,
-    "todo": "Add the GitHub link if the repo is public, and a screenshot of the UI."
+    "todo": "Add a screenshot of the UI.",
+    "private": true
   },
   {
     "id": "planetary-api",
@@ -185,7 +192,7 @@
       "Book borrowing done as an atomic transaction with rollback on failure."
     ],
     "links": {
-      "live": "https://salimie.myweb.cs.uwindsor.ca/comp3077_W2024/project/html/index.php"
+      "code": "https://github.com/EhsanSl/Barca-library-manager"
     },
     "image": {
       "src": "images/projects/library-manager.webp",
@@ -193,8 +200,7 @@
     },
     "featured": true,
     "visible": true,
-    "order": 6,
-    "todo": "The live link is on your old UWindsor student web space and may no longer work; check it, and link the code instead if it's gone."
+    "order": 6
   },
   {
     "id": "resume-assistant",
@@ -215,13 +221,17 @@
       "SQLite",
       "LLM pipelines"
     ],
-    "highlights": [],
+    "highlights": [
+      "Parses past resumes into a deduplicated SQLite store of reusable resume bullets.",
+      "SQL triggers enforce data provenance: every generated line traces back to a stored source record, or the system halts.",
+      "A separate pass converts legacy project folders into reviewable entries without a model reading the underlying code."
+    ],
     "links": {},
     "image": null,
     "featured": false,
     "visible": true,
     "order": 10,
-    "todo": "Decide whether you want this public; add a link if the repo is public."
+    "private": true
   },
   {
     "id": "spam-ensemble",

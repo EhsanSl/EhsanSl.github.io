@@ -11,10 +11,11 @@
       "end": null
     },
     "highlights": [
-      "Working on ultrasound guidance for external ventricular drain (EVD) placement, including ventricle segmentation in transcranial ultrasound."
+      "Designed and implemented a machine-learning pipeline that segments the lateral ventricles, the target structure for a ventriculostomy catheter, from paired transcranial ultrasound and MRI scans across 8 patients using nnU-Net.",
+      "Engineered an end-to-end 3D deep-learning pipeline for automated lateral-ventricle segmentation in transcranial ultrasound using PyTorch and MONAI.",
+      "Curated and annotated an 8-subject dataset of paired 3D ultrasound and co-registered MRI scans, and benchmarked zero-shot ultrasound foundation models (UltraSAM and SAMUS) against it."
     ],
-    "visible": true,
-    "todo": "Confirm with your supervisor what you can say publicly, then add 2-3 highlights."
+    "visible": true
   },
   {
     "id": "netsuite",
@@ -31,10 +32,10 @@
       "Troubleshot and debugged SuiteScript 1.0 and 2.x customization scripts; in simpler cases wrote and delivered working code directly to customers.",
       "Resolved SOAP and REST API integration failures, restoring real-time data flow and reducing client downtime.",
       "Diagnosed and fixed SuiteBuilder issues involving workflows, custom fields and forms.",
-      "Held a 100% case resolution rate with consistent 5/5 customer satisfaction ratings."
+      "Held a 100% case resolution rate with consistent 5/5 customer satisfaction ratings.",
+      "Partnered with engineering teams on product defects, reducing resolution time for escalated issues."
     ],
-    "visible": true,
-    "todo": "Confirm whether this role has ended; if so set period.end (e.g. \"2025-12\")."
+    "visible": true
   },
   {
     "id": "bettermode",
@@ -48,6 +49,7 @@
       "end": "2023-09"
     },
     "highlights": [
+      "Developed a Slack integration for the Bettermode web application, letting businesses connect their Bettermode community to their Slack workspace.",
       "Redesigned the Node.js back-end architecture using modular design patterns, cutting setup time by 20% and improving deployment reliability.",
       "Implemented OAuth 2.0 authentication for the Slack integration, strengthening data security.",
       "Introduced independent channel and webhook connections, improving integration flexibility.",

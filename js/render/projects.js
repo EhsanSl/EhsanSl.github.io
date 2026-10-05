@@ -9,7 +9,7 @@ function humanize(slug, labels) {
 }
 
 function linkButtons(project, className) {
-  return Object.entries(project.links || {})
+  const links = Object.entries(project.links || {})
     .filter(([, url]) => safeUrl(url))
     .map(([kind, url]) =>
       el("a", { class: className, href: url, target: "_blank", rel: "noopener" }, [
@@ -17,6 +17,9 @@ function linkButtons(project, className) {
         icon("arrow-up-right-from-square"),
       ])
     );
+  // Private repos: say so, so a missing code link doesn't look like an oversight.
+  if (project.private && !project.links?.code) links.push(el("span", { class: "private-note", text: "Private repo" }));
+  return links;
 }
 
 function media(project, labels) {
