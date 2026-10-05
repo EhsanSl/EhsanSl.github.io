@@ -1,5 +1,22 @@
 [
   {
+    "id": "concordia-ta",
+    "role": "Teaching Assistant",
+    "focus": "Advanced Program Design with C++",
+    "org": "Concordia University",
+    "location": "Montreal, QC",
+    "type": "teaching",
+    "period": {
+      "start": "2026-09",
+      "end": null
+    },
+    "highlights": [
+      "Run lab sessions and tutorials, walking students through course material and hands-on exercises.",
+      "Mark student assignments and projects."
+    ],
+    "visible": true
+  },
+  {
     "id": "concordia-ra",
     "role": "Research Assistant",
     "focus": "Transcranial ultrasound and ventricle segmentation",
@@ -11,9 +28,9 @@
       "end": null
     },
     "highlights": [
-      "Designed and implemented a machine-learning pipeline that segments the lateral ventricles, the target structure for a ventriculostomy catheter, from paired transcranial ultrasound and MRI scans across 8 patients using nnU-Net.",
-      "Engineered an end-to-end 3D deep-learning pipeline for automated lateral-ventricle segmentation in transcranial ultrasound using PyTorch and MONAI.",
-      "Curated and annotated an 8-subject dataset of paired 3D ultrasound and co-registered MRI scans, and benchmarked zero-shot ultrasound foundation models (UltraSAM and SAMUS) against it."
+      "Segmented the lateral ventricles in paired transcranial ultrasound and MRI of 8 patients using nnU-Net.",
+      "Curated and annotated an ultrasound dataset and benchmarked foundation models (UltraSAM, SAMUS) zero-shot.",
+      "Co-developed a three-layer, skull-mimicking ultrasound phantom and calibrated the ultrasound system for data collection; designed and 3D-printed probe attachments and head phantoms for the experimental setup."
     ],
     "visible": true
   },
@@ -26,7 +43,7 @@
     "type": "industry",
     "period": {
       "start": "2024-10",
-      "end": null
+      "end": "2025-09"
     },
     "highlights": [
       "Troubleshot and debugged SuiteScript 1.0 and 2.x customization scripts; in simpler cases wrote and delivered working code directly to customers.",

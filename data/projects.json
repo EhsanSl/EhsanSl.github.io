@@ -15,16 +15,18 @@
       "research"
     ],
     "tech": [
+      "nnU-Net",
       "PyTorch",
       "MONAI",
-      "nnU-Net",
+      "3D Slicer",
       "3D ultrasound",
-      "MRI"
+      "MRI",
+      "3D printing"
     ],
     "highlights": [
-      "End-to-end 3D deep-learning pipeline (PyTorch, MONAI, nnU-Net) for lateral-ventricle segmentation in transcranial ultrasound.",
-      "Curated and annotated an 8-subject dataset of paired 3D ultrasound and co-registered MRI scans.",
-      "Benchmarked zero-shot ultrasound foundation models (UltraSAM, SAMUS) against the dataset."
+      "Segmented the lateral ventricles in paired transcranial ultrasound and MRI of 8 patients using nnU-Net.",
+      "Curated and annotated an ultrasound dataset and benchmarked foundation models (UltraSAM, SAMUS) zero-shot.",
+      "Co-developed a three-layer, skull-mimicking ultrasound phantom; designed and 3D-printed probe attachments and head phantoms."
     ],
     "links": {},
     "image": null,
